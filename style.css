@@ -1,0 +1,74 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	min-height: 100%;
+	height: 100%;
+	max-height: 100%;
+	overflow: hidden;
+}
+
+#top-row {
+	min-height: 25vh;
+	max-height: 25vh;
+}
+
+#middle-row {
+	min-height: 50vh;
+	max-height: 50vh;
+}
+
+#bottom-row {
+	min-height: 25vh;
+	max-height: 25vh;
+}
+
+#main {
+	width: 30%;
+	height: 30%;
+}
+
+.bigger {
+	width: 40% !important;
+	height: 40% !important;
+}
+
+.mlg {
+	max-height: 100%;
+	display: none;
+}
+
+/* Central picture color rotation animation */
+
+.color-rotate {
+	animation: color-rotate .5s linear infinite;
+}
+
+@keyframes color-rotate {
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+/* Background animation */
+
+.color-change {
+	animation: color-change .5s infinite;
+	-webkit-animation: color-change .5s infinite; /* Chrome and Safari */
+}
+
+@keyframes color-change {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+}
+
+@-webkit-keyframes color-change /* Safari and Chrome - necessary duplicate */ {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+}

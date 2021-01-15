@@ -21,6 +21,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+
+window.alert("*** EPILEPSY WARNING *** \nThis page contains strong flashing lights that can cause seizures in people with photosensitive epilepsy. View it at your own discretion.");
+
 $(document).ready(function() {
 
 	mainChangeSizeLoop($("#main"), false, 2500);

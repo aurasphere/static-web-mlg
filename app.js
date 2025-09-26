@@ -26,7 +26,7 @@ window.alert("*** EPILEPSY WARNING *** \nThis page contains strong flashing ligh
 
 $(document).ready(function() {
 
-	mainChangeSizeLoop($("#main"), false, 10000);
+	mainChangeSizeLoop($("#main"), false, 2500);
 
 	// Starts up the color animations.
 	setTimeout(function() {
@@ -46,7 +46,10 @@ function mainChangeSizeLoop(element, bigger, timeout) {
 	} else {
 		element.removeClass("bigger");
 	}
-	timeout -= 200;
+	// Prevents the cat from killing someone
+	if (timeout > 1000) {
+		timeout -= 200;
+	}
 	setTimeout(function() {
 		mainChangeSizeLoop(element, !bigger, timeout);
 	}, timeout);

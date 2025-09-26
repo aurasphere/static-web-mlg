@@ -26,7 +26,7 @@ window.alert("*** EPILEPSY WARNING *** \nThis page contains strong flashing ligh
 
 $(document).ready(function() {
 
-	mainChangeSizeLoop($("#main"), false, 2500);
+	mainChangeSizeLoop($("#main"), false, 5000);
 
 	// Starts up the color animations.
 	setTimeout(function() {

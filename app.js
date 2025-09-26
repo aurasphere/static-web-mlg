@@ -47,7 +47,7 @@ function mainChangeSizeLoop(element, bigger, timeout) {
 		element.removeClass("bigger");
 	}
 	// Prevents the cat from killing someone
-	if (timeout > 1000) {
+	if (timeout > 500) {
 		timeout -= 200;
 	}
 	setTimeout(function() {

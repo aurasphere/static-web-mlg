@@ -64,7 +64,7 @@ body, html {
 /* Central picture color rotation animation */
 
 .color-rotate {
-	animation: color-rotate .5s linear infinite;
+	animation: color-rotate 5s linear infinite;
 }
 
 @keyframes color-rotate {

@@ -76,8 +76,8 @@ body, html {
 /* Background animation */
 
 .color-change {
-	animation: color-change .5s infinite;
-	-webkit-animation: color-change .5s infinite; /* Chrome and Safari */
+	animation: color-change 5s infinite;
+	-webkit-animation: color-change 5s infinite; /* Chrome and Safari */
 }
 
 @keyframes color-change {
